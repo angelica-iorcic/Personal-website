@@ -291,28 +291,31 @@ TV and Extra Large Screens – 1201px and more.*/
     nav{
         flex-direction: column;
         align-items: center;
-        height: 80px;
+        height: 100px;
         max-width: 576px;
     }
-    ul{
-
+    nav ul{
         align-items: center;
+    }
+    nav ul > li{
+        margin: 0.8rem;
     }
     a{
         color: #000;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
     }
     #logo{
         align-self: center;
         align-items: center;
-        width: 7rem;
+        width: 10rem;
     }
     #logo img{
-        width: 7rem;
+        width: 9rem;
         padding: 0;
     }
     .welcome{
-        height: 350px;
+        justify-content: space-evenly;
+        height: 500px;
         padding: 30px;        
     }
     .first-welcome{
@@ -324,7 +327,7 @@ TV and Extra Large Screens – 1201px and more.*/
         font-optical-sizing: auto;
         font-weight: <weight>;
         font-style: normal;
-        margin-top: 1rem;
+        margin-top: 2rem;
         height: 70px;
     }
     .welcome h2{
@@ -456,11 +459,11 @@ TV and Extra Large Screens – 1201px and more.*/
         height: 30px;
     }
     #contact{
-        height: 300px;
+        height: 320px;
         justify-content: space-between;
     }
     #contact h3{
-        margin-top: 20px;
+        margin-top: 22px;
         font-size: 20px;
     }
     .social ul{
@@ -473,7 +476,7 @@ TV and Extra Large Screens – 1201px and more.*/
         height: 50px;
     }
     .info{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .info > a{
         font-size: 0.5rem !important;
