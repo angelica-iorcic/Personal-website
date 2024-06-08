@@ -1,0 +1,753 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color: rgba(32, 43, 43, 0.119);
+    height: 60px;
+    justify-content: space-evenly;
+    background: rgb(148,144,144);
+    background: linear-gradient(180deg, rgba(148,144,144,1) 50%, rgba(0,0,0,0) 100%);
+    position: fixed;
+}
+#logo{
+    align-self: center;
+    align-items: center;
+    width: 500px;
+}
+#logo img{
+    width: 200px;
+    padding-left: 50px;
+}
+nav ul{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul > li{
+    list-style: none;
+    margin: 0px 20px;
+    font-size: 15px;
+    color: rgb(60, 60, 60);
+}
+/*header img{
+    width: 100%;
+    object-fit: cover;
+/*    position: absolute;
+    z-index: -1;
+}*/
+.welcome{
+    height: 700px;
+    color: #000;
+    background-color: #b6846b5e;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.welcome img{
+    width: 50rem;
+}
+.welcome h1{
+    font-size: 100px;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#aboutMe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 800px;
+    padding: 50px;
+    width: 100%;
+}
+.about-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b6846b5e;
+    width: 30rem;
+    height: 600px;
+    box-shadow: 5px 5px 5px 5px rgba(158, 147, 147, 0.458);
+    margin: 30px;
+    border-radius: 20px;
+}
+.about-photo img{
+    width: 18rem;
+    border-radius: 10px;
+}
+.about-text{
+    text-align: justify;
+    align-self: center;
+    padding: 50px;
+    background-color: #b6846b5e;
+    width: 100%;
+    height: 400px;
+    box-shadow: 5px 5px 5px 5px rgba(158, 147, 147, 0.458);
+    margin: 30px;
+    border-radius: 20px;
+}
+.about-text h1{
+    font-size: 60px;
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.about-text p{
+    font-size: 25px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+#work{
+    height: 1800px;
+    background-image: url(Resources/bg\ glasses.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 100px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+#work h2{
+    height: 50px;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size: 40px;
+    word-spacing: 30px;
+}
+.tools-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1600px;
+}
+.tools{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgba(159, 158, 158, 0.804);
+    box-shadow: 5px 5px 5px rgba(158, 147, 147, 0.458);
+    margin: 30px;
+    border-radius: 20px;
+    height: 450px;
+}
+.tools img{
+    width: 5rem;
+}
+.col-left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.col-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.projects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 1100px;
+    padding: 20px 80px;
+    background-color: rgba(159, 158, 158, 0.804);
+    box-shadow: 5px 5px 5px rgba(158, 147, 147, 0.458);
+    margin: 30px;
+    border-radius: 20px;
+}
+.projects h3{
+    justify-self: center;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size: 30px;
+}
+.html, .css, .javascript{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 45rem;
+}
+.row > div{
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.row a{
+    font-size: 13px;
+}
+.card-group{
+    gap: 20px;
+}
+.gradient{
+    position: absolute;
+    top: 5000;
+    background: rgb(37,34,29);
+    background: linear-gradient(180deg, rgba(37,34,29,1) 0%, rgba(221,204,192,1) 100%);
+    height: 50px;
+    width: 100%;
+}
+#contact{
+    height: 300px;
+    background-color: #DDCCC0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#contact h3{
+    margin-top: 50px;
+    align-content: center;
+    font-size: 30px;
+    z-index: +1;
+}
+.social ul{
+    display: flex;
+    gap: 7rem;
+    justify-content: space-around;
+    padding: 0;
+}
+.social li{
+    list-style: none;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+    font-size: 15px;
+}
+.social a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+.social i{
+    width: 5rem; 
+}
+/*For Mobile Devices – 320px — 480px.
+iPads and Tablets – 481px — 768px.
+Laptops and small screen – 769px — 1024px.
+Large screens and Desktops – 1025px — 1200px.
+TV and Extra Large Screens – 1201px and more.*/
+@media only screen and (max-width: 480px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        height: 80px;
+        max-width: 576px;
+    }
+    ul{
+
+        align-items: center;
+    }
+    a{
+        color: #000;
+        font-size: 0.6rem;
+    }
+    #logo{
+        align-self: center;
+        align-items: center;
+        width: 7rem;
+    }
+    #logo img{
+        width: 7rem;
+        padding: 0;
+    }
+    .welcome{
+        height: 350px;
+        padding: 50px;
+    }
+    .welcome img{
+        margin-top: 1.5rem;
+        width: 10rem;
+    }
+    .welcome h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    #aboutMe{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        height: 810px;
+        padding: 10px;
+    }
+    .about-photo{
+        align-self: center;
+        width: 18.5rem;
+        height: 29rem;
+        margin: 20px;
+    }
+    .about-photo img{
+        width: 14rem;
+        border-radius: 10px;
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 18.5rem;
+        height: 250px;
+        margin: 20px;
+        padding: 20px;
+    }
+    .about-text h1{
+        font-size: 20px;
+        font-family: "Marck Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+    .about-text p{
+        font-size: 13px;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    #work{
+        height: 1570px;
+        padding: 10px 8px;
+    }
+    #work h2{
+        font-size: 1.2rem;
+        word-spacing: 30px;
+        margin-bottom: 0;
+    }
+    .tools-projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1540px;
+    }
+    .tools{
+        padding: 10px;
+        margin: 10px;
+        height: 230px;
+    }
+    .tools > h2{
+        height: 30px !important;
+    }
+    .tools img{
+        width: 50px;
+    }
+    .col-left{
+        justify-content: space-around;
+    }
+    .col-right{
+        justify-content: space-between;
+    }
+    .projects{
+        justify-content: space-between;
+        height: 1250px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .projects h3{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .html, .css, .javascript{
+        align-content: center;
+        justify-items: center;
+        gap: 20px;
+        width: 12rem;
+    }
+    .row > div{
+        height: 5rem !important;
+    }
+    .row h5{
+        font-size: 11px !important;
+    }
+    .row a{
+        font-size: 8px !important;
+    }
+    .card-group{
+        justify-content: center;
+        width: 12rem;
+    }
+    .gradient{
+        height: 30px;
+    }
+    #contact{
+        height: 300px;
+        justify-content: space-between;
+    }
+    #contact h3{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .social ul{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .social li{
+        width: 7rem;
+        display: flex;
+        height: 50px;
+    }
+    .info{
+        margin-bottom: 5rem;
+    }
+    .info > a{
+        font-size: 0.5rem !important;
+    }
+}
+
+@media only screen and ( min-width: 481px) and (max-width: 768px){
+    nav{
+
+        align-items: center;
+        height: 80px;
+        width: 100%;
+    }
+    ul{
+
+        align-items: center;
+    }
+    a{
+        color: #000;
+        font-size: 1.2rem;
+    }
+    #logo{
+        align-self: center;
+        align-items: center;
+        width: 12rem;
+    }
+    #logo img{
+        width: 12rem;
+        padding: 0;
+    }
+    .welcome{
+        height: 400px;
+        padding: 50px;
+    }
+    .welcome img{
+        margin-top: 1.5rem;
+        width: 20rem;
+    }
+    .welcome h1{
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    #aboutMe{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        height: 1100px;
+        padding: 10px;
+    }
+    .about-photo{
+        align-self: center;
+        width: 25rem;
+        height: 40rem;
+        margin: 23px;
+    }
+    .about-photo img{
+        width: 20rem;
+        border-radius: 10px;
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25rem;
+        height: 320px;
+        margin: 25px;
+        padding: 30px;
+    }
+    .about-text h1{
+        font-size: 2rem;
+        font-family: "Marck Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+    .about-text p{
+        font-size: 1.2rem;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    #work{
+        height: 1570px;
+        padding: 15px 20px;
+    }
+    #work h2{
+        font-size: 2.2rem;
+        word-spacing: 30px;
+        height: 6rem;
+        margin-bottom: 0;
+    }
+    .tools-projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 1500px;
+    }
+    .tools{
+        padding: 25px;
+        margin: 10px;
+        height: 350px;
+    }
+    .tools > h2{
+        height: 4rem !important;
+    }
+    .tools img{
+        width: 80px;
+    }
+    .col-left{
+        justify-content: space-around;
+    }
+    .col-right{
+        justify-content: space-between;
+    }
+    .projects{
+        justify-content: space-evenly;
+        height: 950px;
+        padding: 25px;
+        margin: 10px;
+    }
+    .projects h3{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .html, .css, .javascript{
+        align-content: center;
+        justify-items: center;
+        gap: 20px;
+        width: 15rem;
+    }
+    .row > div{
+        height: 7rem !important;
+    }
+    .row h5{
+        font-size: 15px !important;
+    }
+    .row a{
+        font-size: 10px !important;
+    }
+    .card-group{
+        justify-content: center;
+        width: 32rem;
+    }
+    .gradient{
+        height: 50px;
+    }
+    #contact{
+        height: 350px;
+        justify-content: space-around;
+    }
+    #contact h3{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .social ul{
+        gap: 4rem;
+    }
+    .social li{
+        width: 7rem;
+        display: flex;
+        height: 100px;
+    }
+    .info{
+        margin-bottom: 1.5rem;
+    }
+    .info > a{
+        font-size: 1.2rem !important;
+    }
+}
+@media only screen and ( min-width: 769px) and (max-width: 1024px){
+    nav{
+        align-items: center;
+        height: 80px;
+        width: 100%;
+    }
+    ul{
+        align-items: center;
+    }
+    a{
+        color: #000;
+        font-size: 1.2rem;
+    }
+    #logo{
+        align-self: center;
+        align-items: center;
+        width: 12rem;
+    }
+    #logo img{
+        width: 12rem;
+        padding: 0;
+    }
+    .welcome{
+        height: 400px;
+        padding: 50px;
+    }
+    .welcome img{
+        margin-top: 1.5rem;
+        width: 20rem;
+    }
+    .welcome h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+    #aboutMe{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        height: 1100px;
+        padding: 10px;
+    }
+    .about-photo{
+        align-self: center;
+        width: 25rem;
+        height: 40rem;
+        margin: 23px;
+    }
+    .about-photo img{
+        width: 20rem;
+        border-radius: 10px;
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40rem;
+        height: 320px;
+        margin: 25px;
+        padding: 30px;
+    }
+    .about-text h1{
+        font-size: 3rem;
+        font-family: "Marck Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+    .about-text p{
+        font-size: 1.2rem;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    #work{
+        height: 1450px;
+        padding: 20px 30px;
+    }
+    #work h2{
+        font-size: 2.5rem;
+        word-spacing: 30px;
+        height: 4.5rem;
+        margin-bottom: 0;
+    }
+    .tools-projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 1400px;
+    }
+    .tools{
+        padding: 30px;
+        margin: 10px;
+        height: 400px;
+    }
+    .tools > h2{
+        height: 4rem !important;
+    }
+    .tools img{
+        width: 90px;
+    }
+    .col-left{
+        justify-content: space-around;
+    }
+    .col-right{
+        justify-content: space-between;
+    }
+    .projects{
+        justify-content: space-evenly;
+        height: 900px;
+        padding: 25px;
+        margin: 10px;
+    }
+    .projects h3{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .html, .css, .javascript{
+        align-content: center;
+        justify-items: center;
+        gap: 20px;
+        width: 15rem;
+    }
+    .row > div{
+        height: 8rem !important;
+    }
+    .row h5{
+        font-size: 20px !important;
+    }
+    .row a{
+        font-size: 15px !important;
+    }
+    .card-group{
+        justify-content: center;
+        width: 40rem;
+    }
+    .gradient{
+        height: 50px;
+    }
+    #contact{
+        height: 300px;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+    #contact h3{
+        margin: 0;
+        font-size: 37px;
+    }
+    .social ul{
+        gap: 7rem;
+    }
+    .social li{
+        width: 10rem;
+        height: 60px;
+    }
+    .info{
+        margin-bottom: 1rem;
+    }
+    .info > a{
+        font-size: 1rem !important;
+        height: 1rem;
+    }
+}
+@media only screen and ( min-width: 1025px) and (max-width: 1200px){
+    .welcome img
+}
+@media only screen and ( min-width: 1201px){
+
+}
