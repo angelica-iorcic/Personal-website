@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
 }
+#home{
+    padding: 0;
+}
 nav{
     display: flex;
     width: 100%;
@@ -268,7 +271,6 @@ nav ul > li{
     flex-direction: column;
     justify-content: space-between;
     height: 60px;
-    font-size: 15px;
 }
 .social a{
     text-decoration: none;
@@ -278,6 +280,7 @@ nav ul > li{
     row-gap: 10px;
     align-items: center;
     text-align: center;
+    font-size: 20px;
 }
 .social i{
     width: 5rem; 
@@ -298,7 +301,7 @@ TV and Extra Large Screens – 1201px and more.*/
         align-items: center;
     }
     nav ul > li{
-        margin: 0.8rem;
+        margin: 0 0.8rem;
     }
     a{
         color: #000;
@@ -311,6 +314,7 @@ TV and Extra Large Screens – 1201px and more.*/
     }
     #logo img{
         width: 9rem;
+        margin: 0.5rem;
         padding: 0;
     }
     .welcome{
@@ -352,7 +356,6 @@ TV and Extra Large Screens – 1201px and more.*/
         font-style: normal;
         height: 200px;
         text-shadow: 8px 3px 2px rgb(94, 93, 93);
-    
     }
     #aboutMe{
         display: flex;
@@ -459,12 +462,12 @@ TV and Extra Large Screens – 1201px and more.*/
         height: 30px;
     }
     #contact{
-        height: 320px;
+        height: 350px;
         justify-content: space-between;
     }
     #contact h3{
-        margin-top: 22px;
-        font-size: 20px;
+        margin-top: 25px;
+        font-size: 22px;
     }
     .social ul{
         flex-direction: column;
@@ -474,6 +477,9 @@ TV and Extra Large Screens – 1201px and more.*/
         width: 7rem;
         display: flex;
         height: 50px;
+    }
+    .social a{
+        font-size: 0.7rem;
     }
     .info{
         margin-bottom: 3rem;
@@ -485,14 +491,17 @@ TV and Extra Large Screens – 1201px and more.*/
 
 @media only screen and ( min-width: 481px) and (max-width: 768px){
     nav{
-
+        flex-direction: column;
         align-items: center;
-        height: 80px;
+        height: 150px;
         width: 100%;
     }
-    ul{
+    nav ul{
 
         align-items: center;
+    }
+    nav ul > li{
+        margin: 0 1.2rem;
     }
     a{
         color: #000;
@@ -501,40 +510,46 @@ TV and Extra Large Screens – 1201px and more.*/
     #logo{
         align-self: center;
         align-items: center;
-        width: 12rem;
+        width: 10rem;
     }
     #logo img{
-        width: 12rem;
+        width: 10rem;
+        margin-top: 1.5rem;
         padding: 0;
     }
     .welcome{
-        height: 400px;
-        padding: 50px;
-    }
-    .welcome img{
-        margin-top: 1.5rem;
-        width: 20rem;
+        height: 600px;
+        padding: 60px;        
     }
     .welcome h1{
-        text-align: center;
-        font-size: 3.5rem;
+        font-size: 1.8rem;
+        height: 120px;
+    }
+    .welcome h2{
+        font-size: 1.5rem;
+    }
+    .welcome h3{
+        font-size: 3.8rem;
+    }
+    .welcome h1 span{
+        font-size: 7rem;
     }
     #aboutMe{
         display: flex;
-        flex-direction: column;
+
         justify-content: space-around;
         align-content: center;
-        height: 1100px;
+        height: 500px;
         padding: 10px;
     }
     .about-photo{
         align-self: center;
-        width: 25rem;
-        height: 40rem;
+        width: 12rem;
+        height: 20rem;
         margin: 23px;
     }
     .about-photo img{
-        width: 20rem;
+        width: 10rem;
         border-radius: 10px;
     }
     .about-text{
@@ -542,7 +557,7 @@ TV and Extra Large Screens – 1201px and more.*/
         flex-direction: column;
         justify-content: space-around;
         width: 25rem;
-        height: 320px;
+        height: 17rem;
         margin: 25px;
         padding: 30px;
     }
@@ -554,26 +569,26 @@ TV and Extra Large Screens – 1201px and more.*/
         text-align: center;
     }
     .about-text p{
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: "Cormorant Garamond", serif;
         font-weight: 300;
         font-style: normal;
     }
     #work{
-        height: 1570px;
-        padding: 15px 20px;
+        height: 1500px;
+        padding: 15px 40px;
     }
     #work h2{
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         word-spacing: 30px;
-        height: 6rem;
+        height: 5rem;
         margin-bottom: 0;
     }
     .tools-projects{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 1500px;
+        height: 1480px;
     }
     .tools{
         padding: 25px;
@@ -584,13 +599,13 @@ TV and Extra Large Screens – 1201px and more.*/
         height: 4rem !important;
     }
     .tools img{
-        width: 80px;
+        width: 70px;
     }
     .col-left{
         justify-content: space-around;
     }
     .col-right{
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .projects{
         justify-content: space-evenly;
@@ -600,7 +615,7 @@ TV and Extra Large Screens – 1201px and more.*/
     }
     .projects h3{
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .html, .css, .javascript{
         align-content: center;
@@ -609,7 +624,7 @@ TV and Extra Large Screens – 1201px and more.*/
         width: 15rem;
     }
     .row > div{
-        height: 7rem !important;
+        height: 6rem !important;
     }
     .row h5{
         font-size: 15px !important;
@@ -633,18 +648,21 @@ TV and Extra Large Screens – 1201px and more.*/
         font-size: 30px;
     }
     .social ul{
-        gap: 4rem;
+        gap: 5rem;
     }
     .social li{
-        width: 7rem;
+        width: 8rem;
         display: flex;
         height: 100px;
+    }
+    .social a{
+        font-size: 1rem;
     }
     .info{
         margin-bottom: 1.5rem;
     }
     .info > a{
-        font-size: 1.2rem !important;
+        font-size: 1rem !important;
     }
 }
 @media only screen and ( min-width: 769px) and (max-width: 1024px){
@@ -670,46 +688,52 @@ TV and Extra Large Screens – 1201px and more.*/
         padding: 0;
     }
     .welcome{
-        height: 400px;
-        padding: 50px;
-    }
-    .welcome img{
-        margin-top: 1.5rem;
-        width: 20rem;
+        height: 600px;
+        padding: 50px;        
     }
     .welcome h1{
-        text-align: center;
-        font-size: 4rem;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        height: 120px;
+    }
+    .welcome h2{
+        font-size: 1.7rem;
+    }
+    .welcome h3{
+        font-size: 5rem;
+    }
+    .welcome h1 span{
+        font-size: 8rem;
+        height: 200px;    
     }
     #aboutMe{
         display: flex;
-        flex-direction: column;
         justify-content: space-around;
         align-content: center;
-        height: 1100px;
+        height: 600px;
         padding: 10px;
     }
     .about-photo{
         align-self: center;
-        width: 25rem;
-        height: 40rem;
+        width: 15rem;
+        height: 25rem;
         margin: 23px;
     }
     .about-photo img{
-        width: 20rem;
+        width: 12rem;
         border-radius: 10px;
     }
     .about-text{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 40rem;
-        height: 320px;
+        width: 34rem;
+        height: 16rem;
         margin: 25px;
         padding: 30px;
     }
     .about-text h1{
-        font-size: 3rem;
+        font-size: 2.7rem;
         font-family: "Marck Script", cursive;
         font-weight: 400;
         font-style: normal;
@@ -723,7 +747,7 @@ TV and Extra Large Screens – 1201px and more.*/
     }
     #work{
         height: 1450px;
-        padding: 20px 30px;
+        padding: 20px 50px;
     }
     #work h2{
         font-size: 2.5rem;
@@ -738,21 +762,21 @@ TV and Extra Large Screens – 1201px and more.*/
         height: 1400px;
     }
     .tools{
-        padding: 30px;
+        padding: 40px;
         margin: 10px;
         height: 400px;
     }
     .tools > h2{
-        height: 4rem !important;
+        height: 2.7rem !important;
     }
     .tools img{
-        width: 90px;
+        width: 70px;
     }
     .col-left{
         justify-content: space-around;
     }
     .col-right{
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .projects{
         justify-content: space-evenly;
@@ -767,17 +791,17 @@ TV and Extra Large Screens – 1201px and more.*/
     .html, .css, .javascript{
         align-content: center;
         justify-items: center;
-        gap: 20px;
-        width: 15rem;
+        gap: 35px;
+        width: 45rem;
     }
     .row > div{
         height: 8rem !important;
     }
     .row h5{
-        font-size: 20px !important;
+        font-size: 1.2rem !important;
     }
     .row a{
-        font-size: 15px !important;
+        font-size: 0.8rem !important;
     }
     .card-group{
         justify-content: center;
@@ -811,8 +835,335 @@ TV and Extra Large Screens – 1201px and more.*/
     }
 }
 @media only screen and ( min-width: 1025px) and (max-width: 1200px){
-    .welcome img
+    nav{
+        height: 90px;
+    }
+    a{
+        font-size: 1.5rem;
+    }
+    #logo{
+        align-self: center;
+        align-items: center;
+        width: 12rem;
+    }
+    #logo img{
+        width: 12rem;
+        padding: 0;
+    }
+    #aboutMe{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        height: 700px;
+        padding: 10px;
+    }
+    .about-photo{
+        align-self: center;
+        width: 18rem;
+        height: 30rem;
+        margin: 23px;
+    }
+    .about-photo img{
+        width: 15rem;
+    }
+    .about-text{
+        width: 38rem;
+        height: 25rem;
+    }
+    .about-text h1{
+        font-size: 3rem;
+    }
+    .about-text p{
+        font-size: 1.5rem;
+    }
 }
-@media only screen and ( min-width: 1201px){
-
+@media only screen and ( min-width: 1201px) and (max-width: 2560px){
+    nav{
+        height: 130px;
+    }
+    a{
+        font-size: 2rem;
+    }
+    #logo{
+        width: 25rem;
+    }
+    #logo img{
+        width: 25rem;
+    }
+    .welcome{
+        height: 800px;        
+    }
+    .welcome h1{
+        font-size: 3rem;
+        margin-top: 2rem;
+        height: 150px;
+    }
+    .welcome h2{
+        font-size: 2rem;
+    }
+    .welcome h3{
+        font-size: 10rem;
+    }
+    .welcome h1 span{
+        font-size: 10rem;    
+    }
+    #aboutMe{
+        height: 1000px;
+        padding: 30px;
+    }
+    .about-photo{
+        align-self: center;
+        width: 30rem;
+        height: 40rem;
+        margin: 20px;
+    }
+    .about-photo img{
+        width: 20rem;
+    }
+    .about-text{
+        width: 70rem;
+        height: 30rem;
+        margin: 20px;
+        padding: 70px;
+    }
+    .about-text h1{
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .about-text p{
+        font-size: 2rem;
+    }
+    #work{
+        height: 3200px;
+        padding: 50px 100px;
+    }
+    #work h2{
+        height: 100px;
+        font-size: 4rem;
+        word-spacing: 30px;
+    }
+    .tools-projects{
+        height: 3100px;
+        justify-content: space-around;
+    }
+    .tools{
+        padding: 4rem;
+        margin: 4rem;
+        height: 800px;
+    }
+    .tools img{
+        width: 10rem;
+    }
+    .col-left{
+    }
+    .col-right{
+        justify-content: space-evenly;
+    }
+    .projects{
+        height: 1800px;
+        margin: 30px;
+    }
+    .projects h3{
+        font-size: 3rem;
+    }
+    .html, .css, .javascript{
+        gap: 100px;
+        width: 70rem;
+    }
+    .row > div{
+        height: 13rem !important;
+    }
+    .row h5{
+        font-size: 2.5rem !important;
+    }
+    .row a{
+        font-size: 1.5rem;
+    }
+    .card-group{
+        gap: 50px;
+        width: 70rem;
+    }
+    #contact{
+        height: 800px;
+    }
+    #contact h3{
+        font-size: 5rem;
+        margin: 0;
+    }
+    .social ul{
+        gap: 7rem;
+        padding: 0;
+    }
+    .social li{
+        width: 20rem;
+        height: 170px;
+    }
+    .social a{
+        font-size: 2.5rem;
+    }
+    .social i{
+        width: 3rem; 
+    }
+    .info > a{
+        font-size: 2.5rem !important;
+    }
+}
+@media only screen and ( min-width: 2561px){
+    nav{
+        height: 150px;
+    }
+    a{
+        font-size: 3rem;
+    }
+    #logo{
+        width: 25rem;
+    }
+    #logo img{
+        width: 25rem;
+        padding-left: 5rem;
+    }
+    .welcome{
+        height: 1500px;
+        padding: 50px;        
+    }
+    .welcome h1{
+        font-size: 5rem;
+        margin-top: 2rem;
+        height: 310px;
+    }
+    .welcome h2{
+        font-size: 3rem;
+    }
+    .welcome h3{
+        font-size: 15rem;
+    }
+    .welcome h1 span{
+        font-size: 20rem;
+        height: 200px;    
+    }
+    #aboutMe{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        height: 1500px;
+        padding: 10px;
+    }
+    .about-photo{
+        align-self: center;
+        width: 49rem;
+        height: 80rem;
+        margin: 23px;
+    }
+    .about-photo img{
+        width: 40rem;
+        border-radius: 10px;
+    }
+    .about-text{
+        width: 90rem;
+        height: 50rem;
+        margin: 25px;
+        padding: 70px;
+    }
+    .about-text h1{
+        font-size: 8rem;
+        font-family: "Marck Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+    .about-text p{
+        font-size: 3.5rem;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    #work{
+        height: 3250px;
+        padding: 70px 100px;
+    }
+    #work h2{
+        font-size: 6rem;
+        word-spacing: 30px;
+        height: 10rem;
+        margin-bottom: 0;
+    }
+    .tools-projects{
+        height: 3100px;
+    }
+    .tools{
+        padding: 30px;
+        margin: 10px;
+        height: 1000px;
+    }
+    .tools > h2{
+        height: 9rem !important;
+    }
+    .tools img{
+        width: 15rem;
+    }
+    .col-left{
+        justify-content: space-around;
+    }
+    .col-right{
+        justify-content: space-around;
+    }
+    .projects{
+        justify-content: space-evenly;
+        height: 2000px;
+        padding: 25px;
+        margin: 10px;
+    }
+    .projects h3{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .html, .css, .javascript{
+        align-content: center;
+        justify-items: center;
+        gap: 35px;
+        width: 130rem;
+    }
+    .row > div{
+        height: 13rem !important;
+    }
+    .row h5{
+        font-size: 2rem !important;
+        margin-bottom: 3rem;
+    }
+    .row a{
+        font-size: 1.7rem !important;
+    }
+    .card-group{
+        justify-content: center;
+        width: 100rem;
+    }
+    .gradient{
+        height: 50px;
+    }
+    #contact{
+        height: 700px;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+    #contact h3{
+        margin: 0;
+        font-size: 5rem;
+    }
+    .social ul{
+        gap: 10rem;
+    }
+    .social li{
+        width: 20rem;
+        height: 120px;
+    }
+    .social a{
+        font-size: 2.5rem;
+    }
+    .info{
+        margin-bottom: 1rem;
+    }
+    .info > a{
+        font-size: 2.5rem !important;
+        height: 1rem;
+    }  
 }
